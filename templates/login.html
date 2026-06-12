@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% block title %}Вход — ЦЕХ{% endblock %}
+
+{% block body %}
+<div class="pole"></div>
+<div class="auth-wrap">
+  <form class="auth-card" method="POST" action="{{ url_for('login') }}">
+    {{ form.hidden_tag() }}
+    <div class="brand">ЦЕХ<span style="color:var(--brass)">.</span></div>
+    <div class="sub">Панель администратора</div>
+
+    {% with messages = get_flashed_messages(with_categories=true) %}
+      {% for category, message in messages %}
+        <div class="flash {{ category }}">{{ message }}</div>
+      {% endfor %}
+    {% endwith %}
+
+    <div class="field">
+      {{ form.username.label }}
+      {{ form.username() }}
+    </div>
+    <div class="field">
+      {{ form.password.label }}
+      {{ form.password() }}
+    </div>
+    <button type="submit" class="btn">Войти</button>
+  </form>
+</div>
+{% endblock %}
