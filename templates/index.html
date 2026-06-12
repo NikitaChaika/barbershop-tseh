@@ -1,0 +1,144 @@
+{% extends "base.html" %}
+
+{% block body %}
+<div class="pole"></div>
+
+<header class="nav">
+  <div class="wrap nav-inner">
+    <div class="brand">ЦЕХ<span>.</span></div>
+    <nav class="nav-links" id="navLinks">
+      <a href="#services">Услуги</a>
+      <a href="#why">Почему мы</a>
+      <a href="#masters">Мастера</a>
+      <a href="#booking">Контакты</a>
+      <a href="#booking" class="btn">Записаться</a>
+    </nav>
+    <button class="burger" id="burger" aria-label="Меню"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <span class="eyebrow">Мужской барбершоп · с 2014 года</span>
+      <h1>Стрижка<span class="l2">по-мужски.</span></h1>
+      <p class="lead">Классические стрижки, бритьё опасной бритвой и уход за бородой. Без суеты, по записи, с хорошим кофе.</p>
+      <div class="hero-cta">
+        <a href="#booking" class="btn">Записаться онлайн</a>
+        <a href="#services" class="btn btn-ghost">Услуги и цены</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat"><div class="n">11&nbsp;лет</div><div class="l">на районе</div></div>
+        <div class="stat"><div class="n">4&nbsp;800+</div><div class="l">довольных гостей</div></div>
+        <div class="stat"><div class="n">4.9</div><div class="l">средняя оценка</div></div>
+      </div>
+    </div>
+    <div class="emblem">
+      <div class="razor">✂</div>
+      <div class="est">Est. MMXIV</div>
+      <div class="big">ЦЕХ</div>
+      <div class="small">Barber Co.</div>
+    </div>
+  </div>
+</section>
+
+<div class="pole"></div>
+
+<section class="services" id="services">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Прайс</span>
+      <h2>Услуги и цены</h2>
+      <p>Фиксированная стоимость без скрытых доплат. Время на каждую услугу закладываем с запасом — никто никуда не торопится.</p>
+    </div>
+    <div class="price-list">
+      <div class="price-row"><span class="name">Мужская стрижка<span class="desc">Машинка + ножницы, мытьё, укладка</span></span><span class="dots"></span><span class="price">1 500 ₽</span></div>
+      <div class="price-row"><span class="name">Стрижка + борода<span class="desc">Полный образ под ключ</span></span><span class="dots"></span><span class="price">2 300 ₽</span></div>
+      <div class="price-row"><span class="name">Бритьё бритвой<span class="desc">Опасная бритва, горячее полотенце</span></span><span class="dots"></span><span class="price">1 400 ₽</span></div>
+      <div class="price-row"><span class="name">Коррекция бороды<span class="desc">Окантовка, моделирование, уход</span></span><span class="dots"></span><span class="price">1 100 ₽</span></div>
+      <div class="price-row"><span class="name">Камуфляж седины<span class="desc">Тонирование волос или бороды</span></span><span class="dots"></span><span class="price">900 ₽</span></div>
+      <div class="price-row"><span class="name">Детская стрижка<span class="desc">Для гостей до 12 лет</span></span><span class="dots"></span><span class="price">1 000 ₽</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="why">
+  <div class="wrap">
+    <div class="sec-head"><span class="eyebrow">Почему ЦЕХ</span><h2>Не парикмахерская. Барбершоп.</h2></div>
+    <div class="feat-grid">
+      <div class="feat"><div class="num">01</div><h3>Только барберы</h3><p>У нас стригут мастера, которые специализируются на мужских стрижках. Именно мужской профиль.</p></div>
+      <div class="feat"><div class="num">02</div><h3>По записи</h3><p>Приходите к своему времени — без очередей. Ваш мастер уже готов и ждёт именно вас.</p></div>
+      <div class="feat"><div class="num">03</div><h3>Атмосфера</h3><p>Кофе, дерево, латунь и нормальная музыка. Сюда заходят не только подстричься, но и выдохнуть.</p></div>
+    </div>
+  </div>
+</section>
+
+<div class="pole"></div>
+
+<section class="masters" id="masters">
+  <div class="wrap">
+    <div class="sec-head"><span class="eyebrow">Команда</span><h2>Наши мастера</h2></div>
+    <div class="master-grid">
+      <div class="master"><div class="photo">А</div><div class="info"><h3>Андрей</h3><span class="role">Топ-барбер</span><p>9 лет за креслом. Фейды, классика, работа с густой бородой.</p></div></div>
+      <div class="master"><div class="photo">М</div><div class="info"><h3>Максим</h3><span class="role">Барбер</span><p>Любит чёткие линии. Бритьё опасной бритвой — его коронка.</p></div></div>
+      <div class="master"><div class="photo">И</div><div class="info"><h3>Игорь</h3><span class="role">Барбер · колорист</span><p>Камуфляж седины и тонирование. Результат, а не «покраска».</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="booking">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Запись</span>
+      <h2>Записаться в ЦЕХ</h2>
+      <p>Оставьте заявку — администратор перезвонит в течение 15 минут и подтвердит время.</p>
+    </div>
+    <div class="booking-grid">
+      <div>
+        <div class="contact-block"><div class="k">Адрес</div><div class="v small">ул. Ремесленная, 14 · 1 этаж</div></div>
+        <div class="contact-block"><div class="k">Телефон</div><div class="v">+7 900 000-00-00</div></div>
+        <div class="contact-block"><div class="k">Часы работы</div><div class="v small">Пн–Вс · 10:00 – 22:00</div></div>
+        <div class="contact-block"><div class="k">Мы в сети</div><div class="v small">@tseh.barber · vk.com/tseh</div></div>
+      </div>
+
+      <form class="card" method="POST" action="{{ url_for('book') }}">
+        {{ form.hidden_tag() }}  {# скрытый CSRF-токен #}
+
+        {% with messages = get_flashed_messages(with_categories=true) %}
+          {% for category, message in messages %}
+            <div class="flash {{ category }}">{{ message }}</div>
+          {% endfor %}
+        {% endwith %}
+
+        <div class="field">
+          {{ form.name.label }}
+          {{ form.name(placeholder="Иван") }}
+          {% for e in form.name.errors %}<div class="field-error">{{ e }}</div>{% endfor %}
+        </div>
+        <div class="field">
+          {{ form.phone.label }}
+          {{ form.phone(placeholder="+7 ___ ___-__-__") }}
+          {% for e in form.phone.errors %}<div class="field-error">{{ e }}</div>{% endfor %}
+        </div>
+        <div class="field">
+          {{ form.service.label }}
+          {{ form.service() }}
+        </div>
+        <button type="submit" class="btn">Отправить заявку</button>
+        <p class="form-note">Нажимая кнопку, вы соглашаетесь на обработку данных</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<div class="pole"></div>
+
+<footer>
+  <div class="wrap">
+    <div class="brand">ЦЕХ<span style="color:var(--brass)">.</span></div>
+    <p>Мужской барбершоп · ул. Ремесленная, 14</p>
+    <div class="socials"><a href="#">Instagram</a><a href="#">VK</a><a href="#">Telegram</a></div>
+    <p>© 2025 ЦЕХ Barber Co. · <a href="{{ url_for('login') }}" style="color:var(--muted)">Вход для персонала</a></p>
+  </div>
+</footer>
+{% endblock %}
